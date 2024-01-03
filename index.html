@@ -85,6 +85,7 @@
             * Default game width.
             * @const
             */
+            // var DEFAULT_WIDTH = window.offsetWidth;
             var DEFAULT_WIDTH = 600;
             /**
             * Frames per second.
@@ -1942,7 +1943,7 @@
         /* Copyright 2014 The Chromium Authors. All rights reserved.
    Use of this source code is governed by a BSD-style license that can be
    found in the LICENSE file. */
-
+        
         a {
             color: #585858;
         }
@@ -2200,6 +2201,24 @@
             .small-link {
                 font-size: 1em;
             }
+        }
+
+        @media screen and (max-width: 60vh) {
+            .interstitial-wrapper{
+                transform: rotate(90deg) translateX(33vw);
+                scale: 2.5;
+            }
+        }
+
+        @media screen and (max-width: 50vh) {
+            .interstitial-wrapper{
+                transform: rotate(90deg) translateX(33vw);
+                scale: 3;
+            }
+        }
+
+        *{
+            user-select: none;
         }
     </style>
     <style>
